@@ -20,8 +20,7 @@ class M_kk extends CI_Model {
 	}
 	 public function update($foto) {
     	$data = array(
-    		'no_kk' => $this->input->post('no_kk'),
-			'nama_kepala' => $this->input->post('nama_kepala'),
+ 			'nama_kepala' => $this->input->post('nama_kepala'),
 			'alamat' => $this->input->post('alamat')
     		);
   $no_kk = $this->input->post('no_kk');
