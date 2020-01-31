@@ -18,7 +18,7 @@ class M_kk extends CI_Model {
 			);
 		$this->db->insert($this->table, $data);
 	}
-	 public function update($foto) {
+	 public function update() {
     	$data = array(
  			'nama_kepala' => $this->input->post('nama_kepala'),
 			'alamat' => $this->input->post('alamat')
