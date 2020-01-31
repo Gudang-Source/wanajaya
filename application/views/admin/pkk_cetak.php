@@ -1,7 +1,7 @@
 <!-- Content Wrapper. Contains page content -->
 <style type="text/css">
-	<!--
-	.style5 {font-family: "Times New Roman", Times, serif; font-weight: bold; font-size: 18px; }
+    <!--
+    .style5 {font-family: "Times New Roman", Times, serif; font-weight: bold; font-size: 18px; }
 -->
 </style>
 <!-- Main content -->
@@ -11,7 +11,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        E-KTP
+        KARTU KELUARGA
         <small>Cetak Surat Pengantar</small>
       </h1>
     </section>
@@ -33,7 +33,7 @@
             <strong>
               Nomor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;475/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/513.2016/<?php echo bulanrom() ?>/<?php echo tahun() ?><br>
               Sifat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;-<br>
-              Hal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; <u>Permohonan rekam E – KTP </u><br>
+              Hal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; <u>Permohonan Cetak Kartu Keluarga </u><br>
             </strong>
           </address>
         </div>
@@ -41,13 +41,13 @@
         <div class="col-xs-6">
           <address>
             <strong>
-              Bekasi,
+              Wanajaya,
               <?php echo tanggal() ?>
 
 
               <br>
               Kepada&nbsp;&nbsp;&nbsp;&nbsp;:<br>
-              Yth.Dinas Kependudukan dan Catatan Sipil Bekasi<br>
+              Yth.Dinas Kependudukan dan Catatan Sipil Kab Bekasi<br>
               Di : &nbsp;-<br>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bekasi
             </strong>
@@ -56,7 +56,7 @@
         <!-- Table row -->
         <div class="row">
           <div class="col-xs-12 table-responsive">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan dibawah ini kami Kepala  Desa Wanajaya Kecamatan  Selang
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan dibawah ini kami Kepala  Desa Wanajaya Kecamatan  Cibitung
               Kabupaten Bekasi, menerangkan dengan sesungguhnya bahwa  :
             </p>
             <table class="table table-striped">
@@ -64,65 +64,23 @@
                 <tr>
                   <td >&nbsp;</td>
                   <td>&nbsp;</td>
-                  <td class="col-xs-3 table-responsive">NIK</td>
+                  <td class="col-xs-3 table-responsive">NO Kartu Keluarga</td>
                   <td>:&nbsp;&nbsp;&nbsp;</td>
-                  <td><?=$wrg['nik']?></td>
+                  <td><?=$pkk['no_kk']?></td>
                 </tr>
                 <tr>
                   <td>&nbsp;</td>
                   <td>&nbsp;</td>
-                  <td>Nama</td>
+                  <td>Nama Kepala Keluarga</td>
                   <td>:&nbsp;&nbsp;&nbsp;</td>
-                  <td><?=$wrg['nama']?></td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Tempat Tanggal Lahir</td>
-                  <td>:&nbsp;&nbsp;&nbsp;</td>
-                  <td><?=$wrg['ttl']?> , <?php echo tgl_indo($wrg['tgl']);?></td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Pekerjaan</td>
-                  <td>:&nbsp;&nbsp;&nbsp;</td>
-                  <td><?=$wrg['pekerjaan']?></td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Jenis Kelamin</td>
-                  <td>:&nbsp;&nbsp;&nbsp;</td>
-                  <td><?=$wrg['jenkel']?></td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Status Perkawinan</td>
-                  <td>:&nbsp;&nbsp;&nbsp;</td>
-                  <td><?=$wrg['status']?></td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Kewarganegaraan</td>
-                  <td>:&nbsp;&nbsp;&nbsp;</td>
-                  <td><?=$wrg['kewarganegaraan']?></td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Agama</td>
-                  <td>:&nbsp;&nbsp;&nbsp;</td>
-                  <td><?=$wrg['agama']?></td>
+                  <td><?=$pkk['nama_kepala']?></td>
                 </tr>
                 <tr>
                   <td>&nbsp;</td>
                   <td>&nbsp;</td>
                   <td>Alamat</td>
                   <td>:&nbsp;&nbsp;&nbsp;</td>
-                  <td><?=$wrg['alamat']?></td>
+                  <td><?=$pkk['alamat']?></td>
                 </tr>
               </tbody>
             </table>
@@ -161,3 +119,4 @@
       <div class="clearfix"></div>
     </div>
   <!-- /.content-wrapper -->
+

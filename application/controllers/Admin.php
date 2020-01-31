@@ -71,7 +71,7 @@ public function admin2_edit() {
   if ($nid = $this->uri->segment(3)) {
    $data = array(
     'title' => 'EDIT DATA ADMIN PENGELOLA',
-    'adm2'   => $this->db->get_where('tbl_admin2', array('nid' => $nid))->row_array()
+    'adm2'   => $this->db->get_where('tbl_petugas', array('nip' => $nip))->row_array()
     );
    $this->load->view('admin/header', $data);
    $this->load->view('admin/admin2_edit');
@@ -334,18 +334,50 @@ public function kk_hapus() {
 }
 }
 
+  //pengantar KK
+    public function pkk() {
+     $data = array(
+      'title' => 'PENGANTAR KARTU KELUARGA',
+      'pkk'   => $this->m_kk->data()
+      );
+     $this->load->view('admin/header', $data);
+     $this->load->view('admin/pkk_list');
+     $this->load->view('admin/footer');
+    }
+    
+    //cetak pengantar KK
+    public function pkk_cetak() {
+     if (isset($_POST['submit'])) {
+      $uploadFoto = $this->upload_foto();
+      $this->m_warga->lihat($uploadFoto);
+      $this->session->set_flashdata('Lihat', 'Data Kartu Keluarga');
+      redirect('admin/pkk');
+    } else {
+      if ($no_kk = $this->uri->segment(3)) {
+       $data = array(
+        'title' => 'PEMBUATAN SURAT PENGANTAR WARGA',
+        'pkk'   => $this->db->get_where('tbl_kk', array('no_kk' => $no_kk))->row_array()
+        );
+       $this->load->view('admin/header', $data);
+       $this->load->view('admin/pkk_cetak');
+       $this->load->view('admin/footerx');
+     } else {
+       redirect('admin/pkk');
+     }
+    }
+    }
 
-//list ektp
-public function ektp() {
- $data = array(
-  'title' => 'PEMBUATAN SURAT PENGANTAR WARGA',
-  'wrg'   => $this->m_warga->data()
-  );
- $this->load->view('admin/header', $data);
- $this->load->view('admin/ektp_list');
- $this->load->view('admin/footer');
-}
-
+    //list ektp
+    public function ektp() {
+     $data = array(
+      'title' => 'PEMBUATAN SURAT PENGANTAR WARGA',
+      'wrg'   => $this->m_warga->data()
+      );
+     $this->load->view('admin/header', $data);
+     $this->load->view('admin/ektp_list');
+     $this->load->view('admin/footer');
+    }
+    
 //baru ektp
 public function ektp_baru() {
  if (isset($_POST['submit'])) {

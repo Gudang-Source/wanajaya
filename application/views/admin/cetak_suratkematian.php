@@ -39,7 +39,7 @@
           <!-- Table row -->
           <div class="row">
             <div class="col-xs-12 table-responsive">
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan dibawah ini saya Kepala Desa Mulyoagung Kecamatan Balen Kabupaten Bojonegoro, menerangkan dengan sesungguhnya bahwa :
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan dibawah ini saya Kepala Desa Wanajaya Kecamatan Cibitung Kabupaten Bekasi, menerangkan dengan sesungguhnya bahwa :
               </p>
               <table>
                 <tbody>
@@ -142,13 +142,13 @@
                 <!-- /.col -->
                 <div class="col-xs-4">
 
-                 <p align="center">Mulyoagung,
+                 <p align="center">Wanajaya,
                   <?php echo tanggal() ?><br>
-                  <b>Kepala Desa Mulyoagung</p>
+                  <b>Kepala Desa Wanajaya</p>
                    <br>
                    <br>
                    <br>
-                   <p align="center"><u>SUJARTIKNAN,S.Sos</u></b><p>
+                   <p align="center"><u>Nurdin</u></b><p>
                    </div>
                    <!-- /.col -->
                  </div>

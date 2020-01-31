@@ -144,8 +144,8 @@
           </li>
         </ul>
       </li>      
-      <li <?php if($this->uri->segment(2)=="ektp") { echo 'class="active"'; } ?>>
-        <a href="<?=base_URL()?>admin/ektp"><i class="fa fa-id-card"></i> <span>Pengantar KK</span></a>
+      <li <?php if($this->uri->segment(2)=="pkk") { echo 'class="active"'; } ?>>
+        <a href="<?=base_URL()?>admin/pkk"><i class="fa fa-id-card"></i> <span>Pengantar KK</span></a>
       </li>
 
       <li <?php if($this->uri->segment(2)=="ektp") { echo 'class="active"'; } ?>>
